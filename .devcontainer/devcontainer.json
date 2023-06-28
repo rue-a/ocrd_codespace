@@ -1,10 +1,10 @@
 {
-    "image": "mcr.microsoft.com/devcontainers/universal:2",
+    "image": "mcr.microsoft.com/devcontainers/python:0-3.11-bullseye",
     "hostRequirements": {
         "cpus": 1
     },
     "waitFor": "onCreateCommand",
-    "updateContentCommand": "python3 -m pip install -r requirements.txt",
+    "postCreateCommand": "python3 -m pip install -r requirements.txt",
     "customizations": {
         "codespaces": {
             "openFiles": [
@@ -16,8 +16,7 @@
                 "ms-toolsai.jupyter",
                 "ms-python.python",
                 "mechatroner.rainbow-csv",
-                "janisdd.vscode-edit-csv",
-                "ban.spellright"
+                "streetsidesoftware.code-spell-checker"
             ],
             "settings": {}
         }
