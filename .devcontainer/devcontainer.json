@@ -1,10 +1,10 @@
 {
-    "image": "mcr.microsoft.com/devcontainers/python:0-3.11-bullseye",
+    "image": "mcr.microsoft.com/devcontainers/universal:2",
     "hostRequirements": {
         "cpus": 1
     },
     "waitFor": "onCreateCommand",
-    "postCreateCommand": "python3 -m pip install -r requirements.txt",
+    "postCreateCommand": ".devcontainer/setup.sh",
     "customizations": {
         "codespaces": {
             "openFiles": [
