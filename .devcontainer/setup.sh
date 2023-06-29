@@ -6,4 +6,4 @@ cd ocrd_all
 
 sudo make deps-ubuntu
 make all
-source ocrd_all/venv/bin/activate
+. ocrd_all/venv/bin/activate
